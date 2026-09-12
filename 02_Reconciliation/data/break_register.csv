@@ -1,0 +1,10 @@
+Key,FirstIdentified,Status,Comment
+EQGL|ET0081,2026-06-26,Open,Unsettled trade - qty mismatch
+BALM|EQ0047,2026-06-21,Investigating,Unsettled trade - qty mismatch
+FIIG|BD0053,2026-06-24,Open,Stale price - custodian vs vendor
+BALM|BD0058,2026-06-15,Investigating,Stale price - custodian vs vendor
+EQGL|EQ0034,2026-06-28,Open,Position missing at custodian
+MMUS|BD0068,2026-05-28,Investigating,Position missing at custodian
+BALM|EQ0005,2026-06-27,Open,Unbooked position - internal missing
+EQGL|EQ0001,2026-06-18,Open,Unbooked position - internal missing
+FIIG|CASH_USD_FIIG,2026-06-25,Open,Unreconciled cash movement

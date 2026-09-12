@@ -1,0 +1,7 @@
+FundCode,FundName,Strategy,BaseCurrency,StrikeFrequency,NAVToleranceBps,InceptionDate
+EQGL,Global Equity Fund,Equity,USD,Daily,500,2019-03-15
+EQEM,Emerging Markets Equity,Equity,USD,Daily,500,2020-06-01
+FIIG,Investment Grade Bond,Fixed Income,USD,Daily,150,2017-01-10
+BALM,Balanced Multi-Asset,Balanced,USD,Daily,300,2018-09-20
+MMUS,USD Liquidity Fund,Money Market,USD,Daily,10,2015-04-02
+FDIV,Global Dividend Fund,Equity,USD,Daily,500,2021-02-11
