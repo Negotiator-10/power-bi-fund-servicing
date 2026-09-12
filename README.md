@@ -23,7 +23,6 @@ Files:
 - `NAV_Oversight_FromRaw.pbix` (rebuilt end to end from the raw accounting inputs)
 - `NAV_Oversight_Model.xlsx` (formula-driven Excel model)
 - `data/` source CSVs
-- `PowerBI_Build_Guide.md`
 
 ## Project 2: Cash and Position Reconciliation
 
@@ -41,7 +40,6 @@ Files:
 - `Reconciliation_Matching_Engine.pbix` (matching engine rebuilt natively in Power Query from the two raw books, a full-outer merge on a Fund and Security key with break classification in M)
 - `Reconciliation_Model.xlsx` (formula-driven Excel model)
 - `data/` source CSVs
-- `PowerBI_Build_Guide.md`
 
 ---
 
