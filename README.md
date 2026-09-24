@@ -54,6 +54,7 @@ Reconciles a proprietary desk's internal OMS trade blotter against the exchange 
 - A prop book targets a much cleaner match rate (98 percent plus) than a fund custody reconciliation
 
 Files:
+- `Trade_Reconciliation.pbix` (Power BI dashboard: KPI cards for match rate, open breaks, break notional exposure and unbooked trades; breaks by count and by notional; a filtered break-detail table; asset-class, venue and break-type slicers; and a row-level security role)
 - `Trade_Reconciliation_Model.xlsx` (formula-driven Excel model: raw blotter and confirmations, live break classification, and a summary)
 - `data/` source CSVs (internal blotter, exchange confirmations, the computed reconciliation, and the break register)
 
