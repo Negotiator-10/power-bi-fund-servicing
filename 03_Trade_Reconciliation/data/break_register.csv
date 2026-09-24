@@ -1,0 +1,18 @@
+TradeID,BreakType,Status,Owner,Comment
+T100004,QTY BREAK,Open,Ops-Desk,Partial fill quantity mismatch vs exchange
+T100024,SIDE BREAK,Investigating,Ops-Desk,Buy/Sell booked backwards internally
+T100085,MISSING IN EXCHANGE,Investigating,Ops-Desk,Internal trade with no exchange confirmation (rejected/phantom)
+T100125,FEE BREAK,Investigating,Clearing,Brokerage/STT charge mismatch
+T100213,MISSING IN EXCHANGE,Investigating,Trade-Support,Internal trade with no exchange confirmation (rejected/phantom)
+T100238,QTY BREAK,Investigating,Clearing,Partial fill quantity mismatch vs exchange
+T100250,QTY BREAK,Investigating,Clearing,Partial fill quantity mismatch vs exchange
+T100265,PRICE BREAK,Open,Clearing,Execution price mismatch vs exchange
+T100292,PRICE BREAK,Investigating,Trade-Support,Execution price mismatch vs exchange
+T100294,QTY BREAK,Open,Clearing,Partial fill quantity mismatch vs exchange
+T100316,PRICE BREAK,Open,Clearing,Execution price mismatch vs exchange
+T100317,MISSING IN EXCHANGE,Open,Trade-Support,Internal trade with no exchange confirmation (rejected/phantom)
+T100404,SIDE BREAK,Open,Ops-Desk,Buy/Sell booked backwards internally
+T100417,FEE BREAK,Open,Ops-Desk,Brokerage/STT charge mismatch
+T100431,FEE BREAK,Open,Trade-Support,Brokerage/STT charge mismatch
+T100461,MISSING IN INTERNAL,Open,Ops-Desk,Exchange-confirmed fill not booked internally (unbooked)
+T100462,MISSING IN INTERNAL,Open,Trade-Support,Exchange-confirmed fill not booked internally (unbooked)

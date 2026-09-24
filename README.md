@@ -1,6 +1,6 @@
 # Power BI: Fund Servicing Analytics
 
-Two Power BI and Excel projects that reproduce the daily reporting and controls cycle of a fund servicing / asset servicing operation: **NAV oversight** and **cash and position reconciliation**. Both reproduce a realistic daily operational cycle rather than a trading strategy.
+Three Power BI and Excel projects that reproduce the daily reporting and controls cycle of fund servicing and trading operations: **NAV oversight**, **cash and position reconciliation**, and **trade reconciliation** for a proprietary trading desk. Each reproduces a realistic daily operational cycle rather than a trading strategy.
 
 All figures are synthetic and generated for demonstration only.
 
@@ -41,11 +41,27 @@ Files:
 - `Reconciliation_Model.xlsx` (formula-driven Excel model)
 - `data/` source CSVs
 
+## Project 3: Trade Reconciliation (Proprietary Trading Desk)
+
+Folder: `03_Trade_Reconciliation`
+
+Reconciles a proprietary desk's internal OMS trade blotter against the exchange and clearing confirmations for one trading day, matched trade by trade on a TradeID, classifies every mismatch into a break type, and separates break count from break notional exposure.
+
+- 462 trades for a single day across equities, index futures and options, on NSE and BSE
+- Matching engine on a TradeID key, ordered classification (presence, then side, quantity, price, fees)
+- Break types: missing in exchange, missing in internal (unbooked fill), side, quantity, price, fees
+- Match rate, break notional exposure, and a dedicated unbooked-trade count surfaced for the operations desk
+- A prop book targets a much cleaner match rate (98 percent plus) than a fund custody reconciliation
+
+Files:
+- `Trade_Reconciliation_Model.xlsx` (formula-driven Excel model: raw blotter and confirmations, live break classification, and a summary)
+- `data/` source CSVs (internal blotter, exchange confirmations, the computed reconciliation, and the break register)
+
 ---
 
-## How the two fit together
+## How they fit together
 
-Together they cover one coherent daily cycle a fund servicing team runs: confirm holdings against the custodian (reconciliation), then price and oversee the NAV before release. Both are exception driven, recompute everything, and surface only what needs a human to act on.
+Projects 1 and 2 cover one coherent daily cycle a fund servicing team runs: confirm holdings against the custodian (reconciliation), then price and oversee the NAV before release. Project 3 applies the same exception-driven matching discipline to a proprietary trading desk, where the internal blotter is tied out against the exchange before settlement. All three recompute everything and surface only what needs a human to act on.
 
 ## Tools
 
